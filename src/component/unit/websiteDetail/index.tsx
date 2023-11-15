@@ -46,12 +46,12 @@ export default function WebsiteDetailItem(props: IDetailItemProps) {
                   {props.isBestItems ? (
                     //   <div style={{ border: "2px solid blue" }}>
                     <img
-                      src={`https://storage.cloud.google.com/webportfolio-backend-storage/${props.dataBest?.fetchBestProduct?.files?.[0]?.name}`}
+                      src={`https://storage.googleapis.com/webportfolio-backend-storage/${props.dataBest?.fetchBestProduct?.files?.[0]?.name}`}
                     />
                   ) : (
                     //   </div>
                     <img
-                      src={`https://storage.cloud.google.com/webportfolio-backend-storage/${props.data?.fetchProduct.files?.[0]?.name}`}
+                      src={`https://storage.googleapis.com/webportfolio-backend-storage/${props.data?.fetchProduct.files?.[0]?.name}`}
                     />
                   )}
                 </div>
@@ -59,7 +59,7 @@ export default function WebsiteDetailItem(props: IDetailItemProps) {
                 <div className='product-detail-main-image-big'>
                   {/* <div style={{ border: "2px solid red" }}> */}
                   <img
-                    src={`https://storage.cloud.google.com/webportfolio-backend-storage/${props.mainImg}`}
+                    src={`https://storage.googleapis.com/webportfolio-backend-storage/${props.mainImg}`}
                   />
                 </div>
               )}
@@ -73,7 +73,7 @@ export default function WebsiteDetailItem(props: IDetailItemProps) {
                     }>
                     {" "}
                     <img
-                      src={`https://storage.cloud.google.com/webportfolio-backend-storage/${el.files?.[0]?.name}`}
+                      src={`https://storage.googleapis.com/webportfolio-backend-storage/${el.files?.[0]?.name}`}
                     />
                   </div>
                 ))}
@@ -283,7 +283,7 @@ export default function WebsiteDetailItem(props: IDetailItemProps) {
               <img
                 style={{ cursor: "pointer" }}
                 onClick={() => props.onClickImage(el.files?.[0]?.name)(el.id)}
-                src={`https://storage.cloud.google.com/webportfolio-backend-storage/${el.files?.[0]?.name}`}
+                src={`https://storage.googleapis.com/webportfolio-backend-storage/${el.files?.[0]?.name}`}
               />
               <p onClick={onClickStopPropogation}>{el.name}</p>
               <p onClick={onClickStopPropogation}>{el.description}</p>
