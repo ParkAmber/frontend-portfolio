@@ -20,6 +20,7 @@ const HIDDEN_HEADERS = [
   "/weather/",
   "/portfolio/",
   "/",
+  "/resume/",
   productIDPattern.source, // Use the regular expression source to match any product ID
   // Add other paths as needed
 ];

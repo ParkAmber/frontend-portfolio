@@ -44,6 +44,7 @@ export default function WebsiteDetailItem(props: IDetailItemProps) {
               {!props.mainImg ? (
                 <div className='product-detail-main-image-big'>
                   {props.isBestItems ? (
+                    // https://storage.cloud.google.com/webportfolio-backend-storage
                     //   <div style={{ border: "2px solid blue" }}>
                     <img
                       src={`https://storage.googleapis.com/webportfolio-backend-storage/${props.dataBest?.fetchBestProduct?.files?.[0]?.name}`}
