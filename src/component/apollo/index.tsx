@@ -83,7 +83,7 @@ export default function ApolloSetting(props: IApolloSettingProps): JSX.Element {
     headers: {
       "Apollo-Require-Preflight": "true",
       "Access-Control-Allow-Credentials": "true",
-      "Access-Control-Allow-Origin": "true",
+      // "Access-Control-Allow-Origin": "true",
       // "Content-Type": "application/json",
       // "x-apollo-operation-name": "YourOperationName",
       // "apollo-require-preflight": "true",
