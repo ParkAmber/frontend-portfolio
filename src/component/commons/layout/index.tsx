@@ -21,12 +21,13 @@ const HIDDEN_HEADERS = [
   "/portfolio/",
   "/",
   "/resume/",
-  productIDPattern.source, // Use the regular expression source to match any product ID
+  productIDPattern.source
+  // `/designer/products/${productIDPattern.source}` // Use the regular expression source to match any product ID
   // Add other paths as needed
 ];
 // Create a function to check if a path should be hidden
-const isHiddenPath = (path: string) =>
-  HIDDEN_HEADERS.some((pattern) => new RegExp(pattern).test(path));
+// const isHiddenPath = (path: string) =>
+//   HIDDEN_HEADERS.some((pattern) => new RegExp(pattern).test(path));
 
 
 interface ILayoutProps {
@@ -40,8 +41,8 @@ export default function Layout(props: ILayoutProps): JSX.Element {
   // console.log("===============");
   // isHiddenHeader==> true나 false반환해줌!!
   const isHiddenHeader = HIDDEN_HEADERS.includes(router.asPath);
-  const isHiddenHeader2 = isHiddenPath(router.asPath);
-  console.log(isHiddenHeader,router.asPath,isHiddenHeader2);
+  // const isHiddenHeader2 = isHiddenPath(router.asPath);
+  // console.log(isHiddenHeader,router.asPath,productIDPattern.source);
   return (
     <>
       {/* {
